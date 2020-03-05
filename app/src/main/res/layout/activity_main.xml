@@ -1,27 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    cách 1: Tạo ra thẻ view sẽ chừa 1 view khác
-    <TextView>
-
-    </TextView>
-    Cách 2: Tạo thẻ view dùng hiện thị
-    <TextView/>
-
-
+<!--    Gravity: xin vị trí và xác định theo layout_width và layout_height và nhìn theo kích thước để duy chuyển-->
+<!--    layout_gravity: xin phép thằng cha để được di chuyển-->
+<!--    Margin: giãn cách xung quanh nó: vd margin top:10dp và marginleft:10dp-->
+<!--        padding: giãn cách trong view: (không được tự ý giá trị), nó phụ thuộc vào layout_width và layout-height-->
     <TextView
+        android:layout_margin="10dp"
+        android:textSize="30sp"
+        android:text="View 1"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_height="wrap_content"/>
 
 </LinearLayout>
