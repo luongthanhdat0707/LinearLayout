@@ -5,17 +5,87 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-<!--    Gravity: xin vị trí và xác định theo layout_width và layout_height và nhìn theo kích thước để duy chuyển-->
-<!--    layout_gravity: xin phép thằng cha để được di chuyển-->
-<!--    Margin: giãn cách xung quanh nó: vd margin top:10dp và marginleft:10dp-->
-<!--        padding: giãn cách trong view: (không được tự ý giá trị), nó phụ thuộc vào layout_width và layout-height-->
-    <TextView
-        android:layout_margin="10dp"
-        android:textSize="30sp"
-        android:text="View 1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <TextView
+            android:gravity="center"
+            android:layout_weight="1"
+            android:background="#f20"
+            android:textSize="30sp"
+            android:text="A"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"/>
+        <TextView
+            android:gravity="center"
+            android:layout_weight="1"
+            android:background="#A8D877"
+            android:textSize="30sp"
+            android:text="B"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"/>
+        <TextView
+            android:gravity="center"
+            android:layout_weight="1"
+            android:background="#283693"
+            android:textSize="30sp"
+            android:text="C"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"/>
+        <TextView
+            android:gravity="center"
+            android:layout_weight="1"
+            android:background="#A5137C"
+            android:textSize="30sp"
+            android:text="D"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <TextView
+            android:gravity="center"
+            android:layout_weight="1"
+            android:background="#77D8A3"
+            android:textSize="30sp"
+            android:text="A"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:gravity="center"
+            android:layout_weight="1"
+            android:background="#79DC15"
+            android:textSize="30sp"
+            android:text="B"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:gravity="center"
+            android:layout_weight="1"
+            android:background="#807127"
+            android:textSize="30sp"
+            android:text="C"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:gravity="center"
+            android:layout_weight="1"
+            android:background="#A8D877"
+            android:textSize="30sp"
+            android:text="D"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+
 
 </LinearLayout>
